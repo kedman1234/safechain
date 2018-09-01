@@ -66,10 +66,23 @@
   background: #1d1d1d;
   color: #fff;
 }
-.sidenav li .subheader {
+.sidenav li .subheader,
+.sidenav .collapsible-header {
   background: #131313;
   color: #fff !important;
 }
+.collapsible-header .material-icons.right {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.collapsible-body li>a {
+  background: #131313;
+  padding: 0 18px !important;
+}
+
 .sidenav li>a>i {
   color: #fff !important;
 }
@@ -104,3 +117,23 @@
     padding-left: 0;
   }
 }
+
+
+
+
+
+main {
+    flex: 1 0 auto;
+}
+
+/*@media only screen and (min-width: 601px) {
+  .container {
+    width: 98%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 98%;
+  }
+}*/
