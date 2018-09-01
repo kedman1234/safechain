@@ -1,0 +1,106 @@
+/*
+  Application navigation
+*/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+/* clear float */
+.clear {
+  float: none;
+  clear: both;
+}
+
+
+/* Brand Logo and Color */
+.brand-logo {
+  font-size: 24px !important;
+  font-weight: 600;
+}
+.brand-logo img {
+  margin: 8px;
+  height: 42px;
+  float: left;
+}
+.brand-logo span {
+  float: left;
+  line-height: 22px;
+  margin: 8px 0;
+  color: #333333;
+}
+.brand-logo span small{
+  font-size: 60%;
+  color: #777777;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    min-width: 170px;
+  }
+}
+
+/* Navbar account name */
+.navbar-account-name {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 12px 0 0;
+  font-weight: 500;
+  float: left;
+}
+.navbar-account-name span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sidenav,
+.sidenav li,
+.sidenav li>a{
+  background: #1d1d1d;
+  color: #fff;
+}
+.sidenav li .subheader {
+  background: #131313;
+  color: #fff !important;
+}
+.sidenav li>a>i {
+  color: #fff !important;
+}
+.sidenav .logo>a,
+.sidenav .logo>a:hover,
+.sidenav .logo>a:active,
+.sidenav .logo>a:visited {
+  background: #f1f1f1;
+}
+.sidenav li>a.brand-logo {
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+.sidenav li.no-padding>a {
+  padding: 0 16px;
+}
+.sidenav-open .brand-logo {
+  display: none;
+}
+.sidenav-open header,
+.sidenav-open main,
+.sidenav-open footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  .sidenav-open header,
+  .sidenav-open main,
+  .sidenav-open footer {
+    padding-left: 0;
+  }
+}
