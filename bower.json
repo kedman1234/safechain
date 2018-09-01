@@ -1,0 +1,21 @@
+{
+  "name": "safechain",
+  "description": "Small description for safechain goes here",
+  "main": "",
+  "authors": [
+    "Kedar Kulkarni <kedarvijaykulkarni@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.2"
+  }
+}

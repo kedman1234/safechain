@@ -4,7 +4,9 @@
   "private": true,
   "description": "Small description for safechain goes here",
   "license": "MIT",
-  "author": "",
+  "author": [
+    "Kedar Kulkarni <kedarvijaykulkarni@gmail.com>"
+  ],
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -43,5 +45,8 @@
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
+  },
+  "dependencies": {
+    "ember-cli-sass": "^7.1.7"
   }
 }

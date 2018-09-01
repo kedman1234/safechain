@@ -1,0 +1,198 @@
+.modal-overlay {
+  top: 0px!important;
+  opacity: 0.8!important;
+  height: auto !important;
+}
+
+.chip {
+  color: white !important;
+}
+
+.card-action {
+  a.btn {
+    margin: 0 5px;
+  }
+}
+
+.card {
+  .card-title {
+    font-weight: 500 !important;
+    line-height: inherit !important;
+    margin-bottom: 0px !important;
+    i {
+      line-height: 24px !important;
+    }
+  }
+}
+
+
+// modal button spacing issue
+.modal-content {
+  .modal-header {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+}
+
+.modal-footer {
+  .btn, .btn-flat {
+    margin: 0 5px !important;
+  }
+}
+
+// Date picker not visible in iPad fix. BAK-429
+.picker {
+  position: fixed !important;
+}
+
+// The month and year selectors.
+.picker__select--month, .picker__select--year {
+  font-size: 13px !important;
+}
+
+// Dropdown content
+.dropdown-content {
+  li {
+    min-height: 32px !important;
+    border-bottom: 1px solid #f3f3f3;
+    & > a, & > span {
+      padding: 6px 12px !important;
+      font-size: 14px !important;
+      line-height: 20px !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+// Toaster override
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 24px !important;
+  left: 24px !important;
+  margin-right: 24px;
+  min-width: 10px !important;
+  max-width: auto !important;
+  > div {
+    padding: 15px;
+    width: auto !important;
+  }
+  .toast {
+    float: left !important;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #toast-container {
+    bottom: -8px !important;
+    left: 0 !important;
+    margin-right: 0;
+    min-width: 100% !important;
+    > div {
+      width: 100% !important;
+      border-radius: 0;
+    }
+  }
+}
+
+table {
+  th {
+    font-weight: 500;
+  }
+  &.highlight > tbody > tr {
+    &:hover {
+      background-color: #f9f9f9 !important;
+    }
+  }
+  &.clickable-row > tbody > tr {
+    // -webkit-touch-callout: none;
+    // -webkit-user-select: none;
+    // -khtml-user-select: none;
+    // -moz-user-select: none;
+    // -ms-user-select: none;
+    // user-select: none;
+    // -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    &:hover, &:active, &:focus, &:visited {
+      background-color: #f9f9f9 !important;
+    }
+  }
+  &.non-highlight > tbody > tr {
+    &:hover {
+      background-color: transparent !important;
+      cursor: default;
+    }
+  }
+}
+
+// Filled in checkboxes
+[type="checkbox"].filled-in {
+  border: 1px solid red;
+  &:checked {
+    + label:after {
+      border-color: custom-color("custom-blue", "base") !important;
+      background-color: custom-color("custom-blue", "base") !important;
+    }
+  }
+}
+
+// Class for disable checkboxes
+[type="checkbox"].filled-in:disabled:not(:checked) + label:after {
+  border-color: rgba(144, 144, 144, 1)!important;
+  background-color: rgba(189, 189, 189, 0)!important;
+}
+
+[type="checkbox"].filled-in:disabled:checked + label:after {
+  background-color: custom-color("custom-blue", "lighten-6")!important;
+  border-color: custom-color("custom-blue", "lighten-6")!important;
+}
+
+// Pagination
+.pagination {
+  li {
+    a.icon-anchor {
+      padding: 1px 2px;
+      line-height: 16px;
+    }
+    &.active a {
+      color: #fff !important;
+      &:hover, &:active, &:focus {
+        color: #fff;
+      }
+    }
+    &.active {
+      background-color: $secondary-color!important;
+      color: #fff !important;
+    }
+    &.disabled a {
+      &:hover, &:active, &:focus {
+        color: #999;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 330px) {
+  .pagination li i {
+    width: 23px;
+  }
+}
+
+/*
+    hover color for white button
+    later we need to add for any color hover as mentioned in floowing frame work issue
+    https://github.com/Dogfalo/materialize/issues/1035
+*/
+
+.btn.white.grey-text {
+  &:hover, &:active, &:focus {
+    background-color: rgba(241,241,241,1) !important;
+  }
+}
+
+// placeholder text color in mozilla firefox
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #898989 !important;
+}
