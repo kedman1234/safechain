@@ -17,6 +17,9 @@
   float: none;
   clear: both;
 }
+.btn-rounded {
+  border-radius: 10px;
+}
 
 
 /* Brand Logo and Color */
