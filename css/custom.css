@@ -142,6 +142,9 @@ nav .nav-wrapper .brand-logo {
 .sidenav-open nav .sidenav-trigger  {
   left: 0;
 }
+.sidenav-open main .nav-wrapper>.brand-logo {
+  display: block;
+}
 
 @media only screen and (max-width : 992px) {
   .sidenav-open header,
