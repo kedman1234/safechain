@@ -22,11 +22,11 @@
 /* Brand Logo and Color */
 .brand-logo {
   font-size: 24px !important;
-  font-weight: 600;
+  font-weight: 500;
 }
 .brand-logo img {
   margin: 8px;
-  height: 42px;
+  height: 48px;
   float: left;
 }
 .brand-logo span {
@@ -40,6 +40,21 @@
   color: #777777;
 }
 
+nav .sidenav-trigger {
+  left: 300px;
+}
+nav .sidenav-trigger .menu {
+  display: block;
+}
+nav .sidenav-trigger .close {
+  display: none;
+}
+nav .nav-wrapper .brand-logo {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
     min-width: 170px;
@@ -93,21 +108,30 @@
   background: #f1f1f1;
 }
 .sidenav li>a.brand-logo {
-    display: flex;
-    align-items: center;
-    height: 64px;
+  display: flex;
+  align-items: center;
+  height: 64px;
 }
 
 .sidenav li.no-padding>a {
   padding: 0 16px;
 }
-.sidenav-open .brand-logo {
+.sidenav-open .nav-wrapper>.brand-logo {
   display: none;
 }
 .sidenav-open header,
 .sidenav-open main,
 .sidenav-open footer {
   padding-left: 300px;
+}
+.sidenav-open  .sidenav-trigger .menu {
+  display: none;
+}
+.sidenav-open  .sidenav-trigger .close {
+  display: block;
+}
+.sidenav-open nav .sidenav-trigger  {
+  left: 0;
 }
 
 @media only screen and (max-width : 992px) {
@@ -126,14 +150,9 @@ main {
     flex: 1 0 auto;
 }
 
-/*@media only screen and (min-width: 601px) {
-  .container {
-    width: 98%;
-  }
-}
 
 @media only screen and (min-width: 993px) {
   .container {
     width: 98%;
   }
-}*/
+}
