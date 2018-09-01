@@ -40,6 +40,10 @@
   color: #777777;
 }
 
+.header .navbar-fixed nav {
+  width: 100%;
+}
+
 nav .sidenav-trigger {
   left: 300px;
 }
@@ -131,6 +135,9 @@ nav .nav-wrapper .brand-logo {
 }
 .sidenav-open  .sidenav-trigger .close {
   display: block;
+}
+.sidenav-open .header .navbar-fixed nav {
+  width: calc(100% - 300px);
 }
 .sidenav-open nav .sidenav-trigger  {
   left: 0;
