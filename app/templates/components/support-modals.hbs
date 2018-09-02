@@ -1,0 +1,40 @@
+{{!yield}}
+<!-- Modal Structure -->
+<div id="supportmodal" class="modal smodal">
+  <div class="modal-header">
+      We love your feedback!
+      <a href="#!" class="modal-close right waves-effect btn-flat">
+        <i class="material-icons medium white-text">close</i>
+      </a>
+  </div>
+  <div class="modal-content">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <label>Topic</label>
+          <select class="browser-default">
+            {{!-- <option value="" disabled selected>Choose your option</option> --}}
+            <option value="1" selected>I have some feedback</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        {{!-- <div class="row">
+          <div class="input-field col s12">
+            <input id="input_text" type="text" data-length="10">
+            <label for="input_text">Share your ideas</label>
+          </div>
+        </div> --}}
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea2" class="materialize-textarea" data-length="500"></textarea>
+            <label for="textarea2">Share your ideas</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-rounded">Send</a>
+  </div>
+</div>
