@@ -40,6 +40,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   app.import('bower_components/materialize/dist/js/materialize.min.js');
+  app.import('node_modules/moment/min/moment.min.js');
   //return app.toTree();
   return app.toTree([materializeFonts]);
 };

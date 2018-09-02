@@ -1,49 +1,62 @@
 {{outlet}}
+<nav>
+  <div class="nav-wrapper">
+    <div class="row">
+      <div class="col l12">
+        <span class="brand-logo">
+          <i class="material-icons">insert_drive_file</i>
+          <span>Orders <br><small>Total orders 3</small></span>
+        </span>
+        <ul class="right">
+          <li><a href="#!"><i class="material-icons">search</i></a></li>
+          <li><a href="#!"><i class="material-icons">info</i></a></li>
+          <li><a href="#!"><i class="material-icons">filter_list</i></a></li>
+          <li><a href="#!" class="btn btn-default btn-rounded">New Order</a></li>
+          <li><a href="#!"><i class="material-icons">more_vert</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
 <div class="container">
-
-{{!--   <ul>
-    {{#each model as |order|}}
-      <li>{{order.name}}</li>
-    {{/each}}
-  </ul>
- --}}
-
-{{! I am not use thead/tfoot if not required as it caues issues in print }}
-<table class="table">
-  <tr>
-    <td colspan="4"></td>
-    <td colspan="2"></td>
-  </tr>
-  <tbody>
-    {{#each model as |order|}}
-      <tr>
-        <td colspan="4" class="name">{{order.name}}</td>
-        <td class="date"><i class="material-icons tiny">calendar_today</i>{{order.close}}</td>
-        <td class="ctrl"><a href="#!"><i class="material-icons">more_horiz</i></a></td>
-      </tr>
-      <tr>
-        <td class="key">Order ID</td>
-        <td class="val">{{order.orderid}}</td>
-        <td class="ico"></td>
-        <td class="ico"></td>
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-        <td class="key">Type</td>
-        <td class="val">{{order.type}}</td>
-        <td class="ico"></td>
-        <td class="ico"></td>
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-        <td class="key">Property ID</td>
-        <td class="val">{{order.propertyid}}</td>
-        <td class="ico"></td>
-        <td class="ico"></td>
-        <td colspan="2"></td>
-      </tr>
-    {{/each}}
-  </tbody>
-
-</table>
+  {{! I am not use thead/tfoot if not required as it caues issues in print }}
+  <table class="table">
+    <tr>
+      <td colspan="4"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tbody>
+      {{#each model as |order|}}
+        <tr>
+          <td colspan="4" class="name">{{order.name}}</td>
+          <td class="date">
+            <i class="material-icons">calendar_today</i> {{order.close}}
+          </td>
+          <td class="ctrl"><a href="#!"><i class="material-icons">more_horiz</i></a></td>
+        </tr>
+        <tr>
+          <td class="key">Order ID</td>
+          <td class="val">{{order.orderid}}</td>
+          <td class="ico"></td>
+          <td class="ico"></td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td class="key">Type</td>
+          <td class="val">{{order.type}}</td>
+          <td class="ico"></td>
+          <td class="ico"></td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td class="key">Property ID</td>
+          <td class="val">{{order.propertyid}}</td>
+          <td class="ico"><i class="material-icons">person</i></td>
+          <td class="ico"><i class="material-icons">person</i></td>
+          <td colspan="2"></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
 </div>

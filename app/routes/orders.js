@@ -10,7 +10,7 @@ export default Route.extend({
             "type": "Purchase",
             "propertyid": "123",
             "open": "2018-04-27T11:15:30.000Z",
-            "close": "2018-04-27T23:15:30.000Z"
+            "close": "Fri, Apr 27, 2018"
           },
           {
             "id": "2",
@@ -19,7 +19,7 @@ export default Route.extend({
             "type": "Purchase",
             "propertyid": "243",
             "open": "2003-07-27T11:15:30.000Z",
-            "close": "2003-07-27T23:15:30.000Z"
+            "close": "Sun, Jul 27, 2003"
           },
           {
             "id": "3",
@@ -28,7 +28,7 @@ export default Route.extend({
             "type": "Purchase",
             "propertyid": "458",
             "open": "2018-04-27T11:15:30.000Z",
-            "close": "2018-04-27T23:15:30.000Z"
+            "close": "Fri, Apr 27, 2018"
           }
     ];
     }
