@@ -11,6 +11,10 @@ export default Component.extend({
   didRender() {
     this.$().find('textarea#textarea2').characterCounter();
   },
+  willDestroyElement: function() {
+    //remove handlers like this.$().off(...)
+    // this.$().find('textarea#textarea2').val('');
+  },
   actions: {
     onTextFiledChange: function(value) {
       if(value.length) {
