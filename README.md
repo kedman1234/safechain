@@ -1,6 +1,6 @@
 # safechain
 
-#Clone repo
+# Clone repo
 git clone https://github.com/kedman1234/safechain.git
 
 cd safechain
@@ -13,10 +13,10 @@ website run on http://localhost:4200/
 Kedar Vijay Kulkarni
 kedman1234@gmail.com, kedarvijaykulkarni@gmail.com
 
-#dependancy
+# dependancy
 materialize
 
-#app structure
+# app structure
 
 app
   - navigation-bar (component)
