@@ -19,7 +19,6 @@ export default Component.extend({
     // }
     // console.log(this.$().find("body").hasClass("sidenav-open"));
     /*****************/
-
     // top nav dropdown
     scheduleOnce('afterRender', this, function() {
       // nav collapsible

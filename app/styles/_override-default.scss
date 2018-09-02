@@ -25,6 +25,17 @@
   }
 }
 
+.tab {
+  a {
+    &:focus,
+    &:focus.active {
+      background-color: $white !important;
+      outline: none;
+    }
+
+  }
+}
+// transparentize($tabs-underline-color, .9)
 
 // modal button spacing issue
 .modal-content {

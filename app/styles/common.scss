@@ -105,6 +105,7 @@
       background: custom-color("custom-grey", "darken-10");
       color: $white !important;
       &.active {
+        background:  custom-color("custom-grey", "darken-10");
         &:hover {
           background:  custom-color("custom-grey", "darken-10");
         }
@@ -198,6 +199,11 @@
   main {
     flex: 1 0 auto;
   }
+  .page-title {
+    margin: 24px 0;
+    font-size: 24px;
+    font-weight: 500px;
+  }
 /*
   No media no wrold
 */
@@ -226,3 +232,4 @@
     width: 98%;
   }
 }
+

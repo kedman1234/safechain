@@ -1,0 +1,37 @@
+<div class="page-title">
+  Safechain Test Agency<br><small>You are an administrator of this team</small>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <ul class="tabs">
+      <li class="tab col s3"><a class="active" href="#test1">Active (29)</a></li>
+      <li class="tab col s3"><a href="#test2">Pending (1)</a></li>
+      <li class="tab col s3"><a href="#test3">Deactivated (3)</a></li>
+      <li class="tab col s3"><a href="#test4">Administrators (14)</a></li>
+    </ul>
+  </div>
+  <div id="test1" class="col s12">
+    <table class="table">
+      <tbody>
+        {{#each data as |user|}}
+          <tr>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td class="ctrl"><a href="#!"><i class="material-icons">more_vert</i></a></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  <div id="test2" class="col s12">
+    <p>Pending count 1</p>
+  </div>
+  <div id="test3" class="col s12">
+    <p>Deactivated 3</p>
+  </div>
+  <div id="test4" class="col s12">
+    <p>Administrators 14</p>
+  </div>
+</div>
