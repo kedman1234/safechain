@@ -15,16 +15,16 @@ module.exports = function(defaults) {
     },
     sassOptions: {
         includePaths: [
-          'bower_components/materialize/sass'
+          'node_modules/materialize-css/sass'
         ]
       }
   });
 
-  var materializeFonts = new Funnel('bower_components/materialize/fonts/roboto', {
-        srcDir: '/',
-        include: ['*.woff', '*.ttf', '*.woff2'],
-        destDir: '/fonts/roboto'
-    });
+  // var materializeFonts = new Funnel('app/style/fonts/roboto', {
+  //       srcDir: '/',
+  //       include: ['*.woff', '*.ttf', '*.woff2'],
+  //       destDir: '/fonts/roboto'
+  //   });
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
@@ -39,8 +39,8 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  app.import('bower_components/materialize/dist/js/materialize.min.js');
+  app.import('node_modules/materialize-css/dist/js/materialize.min.js');
   app.import('node_modules/moment/min/moment.min.js');
-  //return app.toTree();
-  return app.toTree([materializeFonts]);
+  return app.toTree();
+  //return app.toTree([materializeFonts]);
 };
