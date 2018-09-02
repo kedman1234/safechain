@@ -1,195 +1,206 @@
-$color_2: #777777;
-
 /* Brand Logo and Color */
-/* Navbar account name */
-.btn-rounded {
-  border-radius: 10px;
-}
-.brand-logo {
-  font-size: 24px !important;
-  font-weight: 500;
-  img {
-    margin: 8px;
-    height: 48px;
-    float: left;
+/*
+  Navbar
+*/
+  .btn-rounded {
+    border-radius: 10px;
   }
-  span {
-    float: left;
-    line-height: 22px;
-    margin: 8px 0;
-    // color: $color_1;
-    small {
-      font-size: 60%;
-      color: $color_2;
+  .brand-logo {
+    font-size: 24px !important;
+    font-weight: 500;
+    img {
+      margin: 8px;
+      height: 48px;
+      float: left;
     }
-  }
-}
-.header {
-  .navbar-fixed {
-    nav {
-      width: 100%;
-    }
-  }
-}
-nav {
-  background:  $navbar-bg-color;
-  .sidenav-trigger {
-    left: 300px;
-    .menu {
-      display: block;
-    }
-    .close {
-      display: none;
-    }
-  }
-  .nav-wrapper {
-    .brand-logo {
-      padding: 0 16px;
-      display: flex;
-      align-items: center;
-      height: 64px;
-    }
-  }
-}
-.navbar-account-name {
-  display: inline-block;
-  font-size: 18px;
-  line-height: 18px;
-  margin: 12px 0 0;
-  font-weight: 500;
-  float: left;
-  max-width: 180px;
-  min-width: 180px;
-  span {
-    font-size: 16px;
-    font-weight: 400;
-  }
-}
-.dropdown-trigger {
-  i.medium {
-    font-size: 3rem !important;
-  }
-}
-.sidenav {
-  background: custom-color("custom-grey", "darken-9");
-  box-shadow: none;
-  color: $white;
-  li {
-    background: custom-color("custom-grey", "darken-9");
-    color: $white;
-    >a {
-      background: custom-color("custom-grey", "darken-9");
-      color: $white;
-      >i {
-        color: $white !important;
+    span {
+      float: left;
+      line-height: 22px;
+      margin: 8px 0;
+      // color: $color_1;
+      small {
+        font-size: 60%;
+        color: custom-color("custom-grey", "darken-7");
       }
-      &.active {
-        background: custom-color("custom-blue", "base");
-      }
-    }
-    .subheader {
-      background: custom-color("custom-grey", "darken-10");
-      color: $white !important;
-    }
-    >a.brand-logo {
-      color: $navbar-font-color;
-      display: flex;
-      align-items: center;
-      height: 64px;
-    }
-  }
-  .collapsible-header {
-    background: custom-color("custom-grey", "darken-10");
-    color: $white !important;
-    &.active {
-      &:hover {
-        background:  custom-color("custom-grey", "darken-10");
-      }
-    }
-  }
-  li.active {
-    .collapsible-header {
-      .material-icons.right {
-        -webkit-transform: rotate(180deg);
-        -moz-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
-        transform: rotate(180deg);
-      }
-    }
-  }
-  .logo {
-    >a {
-      background: #f1f1f1;
-      &:hover {
-        background: #f1f1f1;
-      }
-      &:active {
-        background: #f1f1f1;
-      }
-      &:visited {
-        background: #f1f1f1;
-      }
-    }
-  }
-  li.no-padding {
-    >a {
-      padding: 0 16px;
-    }
-  }
-}
-.collapsible-body {
-  li {
-    >a {
-      background: custom-color("custom-grey", "darken-10");
-      padding: 0 18px !important;
-    }
-  }
-}
-.sidenav-open {
-  .nav-wrapper {
-    >.brand-logo {
-      display: none;
-    }
-  }
-  header {
-    padding-left: 300px;
-  }
-  main {
-    padding-left: 300px;
-    .nav-wrapper {
-      >.brand-logo {
-        display: block;
-      }
-    }
-  }
-  footer {
-    padding-left: 300px;
-  }
-  .sidenav-trigger {
-    .menu {
-      display: none;
-    }
-    .close {
-      display: block;
     }
   }
   .header {
     .navbar-fixed {
       nav {
-        width: calc(100% - 300px);
+        width: 100%;
       }
     }
   }
   nav {
+    background:  $navbar-bg-color;
     .sidenav-trigger {
-      left: 0;
+      left: 300px;
+      .menu {
+        display: block;
+      }
+      .close {
+        display: none;
+      }
+    }
+    .nav-wrapper {
+      .brand-logo {
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        height: 64px;
+      }
     }
   }
-}
-main {
-  flex: 1 0 auto;
-}
+  .navbar-account-name {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 12px 0 0;
+    font-weight: 500;
+    float: left;
+    max-width: 180px;
+    min-width: 180px;
+    span {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .dropdown-trigger {
+    i.medium {
+      font-size: 3rem !important;
+    }
+  }
+/*
+  Sidenavigaion
+*/
+  .sidenav {
+    background: custom-color("custom-grey", "darken-9");
+    box-shadow: none;
+    color: $white;
+    li {
+      background: custom-color("custom-grey", "darken-9");
+      color: $white;
+      >a {
+        background: custom-color("custom-grey", "darken-9");
+        color: $white;
+        >i {
+          color: $white !important;
+        }
+        &.active {
+          background: custom-color("custom-blue", "base");
+        }
+      }
+      .subheader {
+        background: custom-color("custom-grey", "darken-10");
+        color: $white !important;
+      }
+      >a.brand-logo {
+        color: $navbar-font-color;
+        display: flex;
+        align-items: center;
+        height: 64px;
+      }
+    }
+    .collapsible-header {
+      background: custom-color("custom-grey", "darken-10");
+      color: $white !important;
+      &.active {
+        &:hover {
+          background:  custom-color("custom-grey", "darken-10");
+        }
+      }
+    }
+    li.active {
+      .collapsible-header {
+        .material-icons.right {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .logo {
+      >a {
+        background: #f1f1f1;
+        &:hover {
+          background: #f1f1f1;
+        }
+        &:active {
+          background: #f1f1f1;
+        }
+        &:visited {
+          background: #f1f1f1;
+        }
+      }
+    }
+    li.no-padding {
+      >a {
+        padding: 0 16px;
+      }
+    }
+  }
+  // side nav collapsible
+  .collapsible-body {
+    li {
+      >a {
+        background: custom-color("custom-grey", "darken-10");
+        padding: 0 18px !important;
+      }
+    }
+  }
+  // when sidenav is open
+  .sidenav-open {
+    .nav-wrapper {
+      >.brand-logo {
+        display: none;
+      }
+    }
+    header {
+      padding-left: 300px;
+    }
+    main {
+      padding-left: 300px;
+      .nav-wrapper {
+        >.brand-logo {
+          display: block;
+        }
+      }
+    }
+    footer {
+      padding-left: 300px;
+    }
+    .sidenav-trigger {
+      .menu {
+        display: none;
+      }
+      .close {
+        display: block;
+      }
+    }
+    .header {
+      .navbar-fixed {
+        nav {
+          width: calc(100% - 300px);
+        }
+      }
+    }
+    nav {
+      .sidenav-trigger {
+        left: 0;
+      }
+    }
+  }
+/*
+  Main container
+*/
+  main {
+    flex: 1 0 auto;
+  }
+/*
+  No media no wrold
+*/
 @media only screen and (max-width: 992px) {
   nav {
     .brand-logo {
@@ -214,8 +225,4 @@ main {
   .container {
     width: 98%;
   }
-}
-.dropdown-content{
-   width: max-content !important;
-   height:auto !important;
 }
