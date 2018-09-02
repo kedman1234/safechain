@@ -19,7 +19,7 @@ export default Route.extend({
             "type": "Purchase",
             "propertyid": "243",
             "open": "2003-07-27T11:15:30.000Z",
-            "close": "Sun, Jul 27, 2003"
+            "close": "Fri, Jul 27, 2003"
           },
           {
             "id": "3",
