@@ -27,7 +27,10 @@
         </div> --}}
         <div class="row">
           <div class="input-field col s12">
-            <textarea id="textarea2" class="materialize-textarea" data-length="500"></textarea>
+            {{!-- <textarea id="textarea2" onchange={{action 'onTextFiledChange'}} class="materialize-textarea" data-length="500"></textarea> --}}
+
+            {{textarea id="textarea2" focus-out="onTextFiledChange" key-press="onTextFiledChange" class="materialize-textarea" data-length="500"}}
+
             <label for="textarea2">Share your ideas</label>
           </div>
         </div>
@@ -35,6 +38,6 @@
     </div>
   </div>
   <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-rounded">Send</a>
+    <a href="#!" class="modal-close btn-send disabled btn btn-rounded">Send</a>
   </div>
 </div>

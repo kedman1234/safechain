@@ -2,21 +2,22 @@ import Component from '@ember/component';
 
 export default Component.extend({
   didInsertElement() {
-    let _this = this;
     this.$().find('.smodal').modal({
-      dismissible: false,
-      onOpenEnd: function() {
-        console.log('modal open');
-        _this.$().find('textarea#textarea2').on('onkeyup', 'change', 'keyup', () => {
-          console.log(this);
-        });
-      }
+      dismissible: false
     });
-
-
-    this.$().find('input#input_text, textarea#textarea2').characterCounter();
     // this.$().find('select').formSelect();
-
-
+    // console.log(this.$().find('textarea#textarea2'));
+  },
+  didRender() {
+    this.$().find('textarea#textarea2').characterCounter();
+  },
+  actions: {
+    onTextFiledChange: function(value) {
+      if(value.length) {
+        this.$().find('.btn-send').removeClass('disabled');
+      } else {
+        this.$().find('.btn-send').addClass('disabled');
+      }
+    }
   },
 });
