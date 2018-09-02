@@ -32,6 +32,12 @@
     }
   }
   nav {
+    .seperator {
+      border-left: 1px solid custom-color("custom-grey", "darken-6");
+      width: 2px;
+      display: block;
+      height: 62px;
+    }
     background:  $navbar-bg-color;
     .sidenav-trigger {
       left: 300px;
@@ -202,7 +208,13 @@
   .page-title {
     margin: 24px 0;
     font-size: 24px;
-    font-weight: 500px;
+    font-weight: 500;
+  }
+  .inner {
+    table {
+      margin: 24px;
+      width: 96%;
+    }
   }
 /*
   No media no wrold

@@ -9,7 +9,7 @@
         <ul class="right">
           {{!-- <li><a href="#!"><i class="material-icons">search</i></a></li> --}}
           {{!-- <li><a href="#!"><i class="material-icons">info</i></a></li> --}}
-          <li><a href="#!"><i class="material-icons">filter_list</i></a></li>
+          <li><a href="#!"><i class="material-icons">error_outline</i></a></li>
           <li><a href="#!" class="btn btn-default btn-rounded teal accent-4">Invite Coworkers</a></li>
           <li><a href="#!"><i class="material-icons">more_vert</i></a></li>
         </ul>
@@ -18,7 +18,16 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container inner z-depth-2">
 {{!-- Safechain Test Agency --}}
-  {{user-tabs data=model}}
+  <div class="user-box">
+    <div class="row">
+      <div class="col l12">
+        <div class="page-title">
+          Safechain Test Agency<br><small>You are an administrator of this team</small>
+        </div>
+      </div>
+    </div>
+    {{user-tabs data=model}}
+  </div>
 </div>

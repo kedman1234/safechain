@@ -19,42 +19,59 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container inner z-depth-2">
   {{! I am not use thead/tfoot if not required as it caues issues in print }}
-  <table class="table">
+  <table class="table order-table">
     <tr>
-      <td colspan="4"></td>
-      <td colspan="2"></td>
+      <td colspan="5">
+        <nav class="z-depth-0">
+          <div class="nav-wrapper white">
+            <ul class="right">
+              <li>
+                 <!-- Dropdown Trigger -->
+                  <a class='dropdown-trigger' href='#' data-target='closingdate'><b>Sort by</b> closing date <i class="material-icons right">arrow_drop_down</i></a>
+                  <!-- Dropdown Structure -->
+                  <ul id='closingdate' class='dropdown-content'>
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">three</a></li>
+                    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                  </ul>
+              </li>
+              <li><a href="#!"><i class="material-icons">sort</i></a></li>
+              <li class="seperator"></li>
+              <li><a href="#!">1 - 3 of 3</a></li>
+              <li><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+              <li><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </td>
     </tr>
     <tbody>
       {{#each model as |order|}}
         <tr>
-          <td colspan="4" class="name">{{order.name}}</td>
-          <td class="date">
-            <i class="material-icons">calendar_today</i> {{order.close}}
+          <td>
+              <div class="row">
+                <div class="col 12 name">
+                  {{order.name}}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col l6">Order ID</div>
+                <div class="col l6">{{order.orderid}}</div>
+                <div class="col l6">Type</div>
+                <div class="col l6">{{order.type}}</div>
+                <div class="col l6">Property ID</div>
+                <div class="col l6">{{order.propertyid}}</div>
+              </div>
           </td>
+          <td class="ico"><i class="material-icons">person</i></td>
+          <td class="ico"><i class="material-icons">person</i></td>
+          <td class="date"><a class="waves-effect waves-light btn grey lighten-5 grey-text"><i class="material-icons text-darken-4 left">branding_watermark</i>{{order.close}}</a></td>
           <td class="ctrl"><a href="#!"><i class="material-icons">more_horiz</i></a></td>
-        </tr>
-        <tr>
-          <td class="key">Order ID</td>
-          <td class="val">{{order.orderid}}</td>
-          <td class="ico"></td>
-          <td class="ico"></td>
-          <td colspan="2"></td>
-        </tr>
-        <tr>
-          <td class="key">Type</td>
-          <td class="val">{{order.type}}</td>
-          <td class="ico"></td>
-          <td class="ico"></td>
-          <td colspan="2"></td>
-        </tr>
-        <tr>
-          <td class="key">Property ID</td>
-          <td class="val">{{order.propertyid}}</td>
-          <td class="ico"><i class="material-icons">person</i></td>
-          <td class="ico"><i class="material-icons">person</i></td>
-          <td colspan="2"></td>
         </tr>
       {{/each}}
     </tbody>

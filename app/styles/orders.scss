@@ -1,11 +1,21 @@
 .ctrl {
-  width: 85px;
+  vertical-align: top;
+  width: 85px
 }
-.ico {
-  width: 95px;
-  i {
-    border: 5px solid gray;
-    border-radius: 50%;
-    padding: 8px;
+.order-table {
+  .name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .date {
+    vertical-align: top;
+    width: 196px
+  }
+  .ico {
+    i {
+      border: 6px solid gray;
+      border-radius: 50%;
+      padding: 8px;
+    }
   }
 }
