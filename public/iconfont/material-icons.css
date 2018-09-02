@@ -1,23 +1,13 @@
-// iconfont
-// how to use google font offline in the project
-// http://google.github.io/material-design-icons/
-// download fonts from
-// https://github.com/google/material-design-icons/tree/master/iconfont
-// Installing icons from bower
-// $ bower install material-design-icons
-// Installing icons from npm
-// $ npm install material-design-icons
-
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
   src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
-    url(/iconfont/MaterialIcons-Regular.woff) format('woff'),
-    url(/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+       local('MaterialIcons-Regular'),
+       url(MaterialIcons-Regular.woff2) format('woff2'),
+       url(MaterialIcons-Regular.woff) format('woff'),
+       url(MaterialIcons-Regular.ttf) format('truetype');
 }
 
 .material-icons {

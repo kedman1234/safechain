@@ -1,6 +1,4 @@
-$color_1: #333333;
 $color_2: #777777;
-$color_3: #fff;
 
 /* Brand Logo and Color */
 /* Navbar account name */
@@ -19,7 +17,7 @@ $color_3: #fff;
     float: left;
     line-height: 22px;
     margin: 8px 0;
-    color: $color_1;
+    // color: $color_1;
     small {
       font-size: 60%;
       color: $color_2;
@@ -34,6 +32,7 @@ $color_3: #fff;
   }
 }
 nav {
+  background:  $navbar-bg-color;
   .sidenav-trigger {
     left: 300px;
     .menu {
@@ -66,32 +65,47 @@ nav {
     font-weight: 400;
   }
 }
+.dropdown-trigger {
+  i.medium {
+    font-size: 3rem !important;
+  }
+}
 .sidenav {
-  background: #1d1d1d;
-  color: $color_3;
+  background: custom-color("custom-grey", "darken-9");
+  box-shadow: none;
+  color: $white;
   li {
-    background: #1d1d1d;
-    color: $color_3;
+    background: custom-color("custom-grey", "darken-9");
+    color: $white;
     >a {
-      background: #1d1d1d;
-      color: $color_3;
+      background: custom-color("custom-grey", "darken-9");
+      color: $white;
       >i {
-        color: $color_3 !important;
+        color: $white !important;
+      }
+      &.active {
+        background: custom-color("custom-blue", "base");
       }
     }
     .subheader {
-      background: #131313;
-      color: $color_3 !important;
+      background: custom-color("custom-grey", "darken-10");
+      color: $white !important;
     }
     >a.brand-logo {
+      color: $navbar-font-color;
       display: flex;
       align-items: center;
       height: 64px;
     }
   }
   .collapsible-header {
-    background: #131313;
-    color: $color_3 !important;
+    background: custom-color("custom-grey", "darken-10");
+    color: $white !important;
+    &.active {
+      &:hover {
+        background:  custom-color("custom-grey", "darken-10");
+      }
+    }
   }
   li.active {
     .collapsible-header {
@@ -127,7 +141,7 @@ nav {
 .collapsible-body {
   li {
     >a {
-      background: #131313;
+      background: custom-color("custom-grey", "darken-10");
       padding: 0 18px !important;
     }
   }
@@ -200,4 +214,8 @@ main {
   .container {
     width: 98%;
   }
+}
+.dropdown-content{
+   width: max-content !important;
+   height:auto !important;
 }

@@ -1,5 +1,5 @@
+$white: #fff !default;
 $body-color: custom-color("custom-grey", "lighten-1") !default;
-
 $primary-color: custom-color("custom-grey", "base") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
@@ -8,23 +8,20 @@ $secondary-color: custom-color("custom-red", "darken-1") !default;
 $success-color: color("green", "base") !default;
 $error-color: custom-color("custom-red", "base") !default;
 $link-color: custom-color("custom-red", "darken-1") !default;
-$card-link-color: $secondary-color !default;
 
-$navbar-font-color: custom-color("custom-grey", "base") !default;
-$tabs-underline-color: color("yellow", "base") !default;
-$below-ipad-portrait: 767px !default;
-$ipad-portrait-down: "only screen and (max-width : #{$below-ipad-portrait})" !default;
+// $card-link-color: $secondary-color !default;
 
-$gray-second-light: custom-color("custom-grey", "darken-4") !default;
-$gray-second-dark: custom-color("custom-grey", "darken-5") !default;
-$light-gray-background: custom-color("custom-grey", "lighten-3") !default;
-$no-data-text : custom-color("custom-grey", "lighten-6") !default;
-$tooltip: custom-color("custom-grey", "lighten-7") !default;
-$tooltip-border: custom-color("custom-grey", "darken-6") !default;
-
-
-
-$radio-fill-color: custom-color("custom-blue", "base") !default;
+// $navbar-font-color: custom-color("custom-grey", "base") !default;
+// $tabs-underline-color: color("yellow", "base") !default;
+// $below-ipad-portrait: 767px !default;
+// $ipad-portrait-down: "only screen and (max-width : #{$below-ipad-portrait})" !default;
+// $gray-second-light: custom-color("custom-grey", "darken-4") !default;
+// $gray-second-dark: custom-color("custom-grey", "darken-5") !default;
+// $light-gray-background: custom-color("custom-grey", "lighten-3") !default;
+// $no-data-text : custom-color("custom-grey", "lighten-6") !default;
+// $tooltip: custom-color("custom-grey", "lighten-7") !default;
+// $tooltip-border: custom-color("custom-grey", "darken-6") !default;
+// $radio-fill-color: custom-color("custom-blue", "base") !default;
 
 
 /**
@@ -44,10 +41,10 @@ $chip-selected-color: custom-color("custom-blue", "darken-1") !default;
 
 // 13. Navigation Bar
 // ==========================================================================
-$navbar-height: 48px !default;
-$navbar-height-mobile: 48px !default;
-$navbar-font-color: #646464 !default;
-$navbar-bg-color: #fff !default;
+// $navbar-height: 48px !default;
+// $navbar-height-mobile: 48px !default;
+$navbar-font-color: #333 !default;
+$navbar-bg-color: #f1f1f1 !default;
 
 // 14. Side Navigation
 // ==========================================================================

@@ -1,2 +1,49 @@
 {{outlet}}
-orders
+<div class="container">
+
+{{!--   <ul>
+    {{#each model as |order|}}
+      <li>{{order.name}}</li>
+    {{/each}}
+  </ul>
+ --}}
+
+{{! I am not use thead/tfoot if not required as it caues issues in print }}
+<table class="table">
+  <tr>
+    <td colspan="4"></td>
+    <td colspan="2"></td>
+  </tr>
+  <tbody>
+    {{#each model as |order|}}
+      <tr>
+        <td colspan="4" class="name">{{order.name}}</td>
+        <td class="date"><i class="material-icons tiny">calendar_today</i>{{order.close}}</td>
+        <td class="ctrl"><a href="#!"><i class="material-icons">more_horiz</i></a></td>
+      </tr>
+      <tr>
+        <td class="key">Order ID</td>
+        <td class="val">{{order.orderid}}</td>
+        <td class="ico"></td>
+        <td class="ico"></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="key">Type</td>
+        <td class="val">{{order.type}}</td>
+        <td class="ico"></td>
+        <td class="ico"></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="key">Property ID</td>
+        <td class="val">{{order.propertyid}}</td>
+        <td class="ico"></td>
+        <td class="ico"></td>
+        <td colspan="2"></td>
+      </tr>
+    {{/each}}
+  </tbody>
+
+</table>
+</div>
